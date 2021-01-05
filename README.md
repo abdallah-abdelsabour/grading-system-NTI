@@ -1,6 +1,8 @@
 # grading system
 
-cli appliction using nodejs 
+NTI web node.js Anjular
+
+CLI appliction using nodejs  
 
 ## how to use 
 
