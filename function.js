@@ -98,12 +98,41 @@ const lestAll=()=>{
 }
 
 
+const read=(id)=>{
+
+            let data=getData()
+
+               let   studentObj=data.find((student)=>{
+                     if(student.id ===id){
+                     return student;
+                     }
+                    }
+
+                  )
+
+                  if (studentObj===null){
+
+                      console.log("hell")
+
+
+                  }
+                  else{
+                      console.table(studentObj)
+
+
+
+                  }
+
+      }
+
+
 
 
 
 module.exports={
     addFunction :addFunction,
     deleteStudent:deleteStudent,
-    lestAll:lestAll
+    lestAll:lestAll,
+    read:read
 
 }

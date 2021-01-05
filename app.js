@@ -65,6 +65,26 @@ yargs.command(
     }
 )
 
+
+yargs.command(
+    {
+        command:'read' ,
+        describe:'read  student by id ',
+        builder:{
+            id:{
+                describe:"id of the student",
+                demandOption:true,
+                type:'number'
+            }
+
+        },
+
+        handler:(argv)=>{
+            fun.read(argv.id);
+        }
+    }
+)
+
 yargs.parse();
 
 
